@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box; /*позволяет правильно считать ширину и длину элементов для всех на странице это правило */
+}
+.body {
+  font-family: "Roboto", sans-serif;
+}
+.header {
+  background-color: #635854;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 4px solid #3596f5; /* полоска синяя снизу*/
+}
+.navbar {
+  max-width: 1280px;
+  margin: auto;
+  display: flex; /* сделали блок гибким*/
+  justify-content: space-between; /*расставили элементы по краям*/
+  align-items: center;
+}
+.navbar-menu {
+  margin: 0; /* отключаем внешние отступы */
+  padding: 0; /* отключаем внутрение отступы */
+  list-style: none; /* отключаем точки у списка*/
+  display: flex; /* сделали блок гибким, элементы выстроились в линию*/
+  text-align: center; /* сделали чтобы в центре все эелементы*/
+}
+.navbar-item {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.navbar-link {
+  text-decoration: none; /* отключаем подчеркивание текста ссылок*/
+  color: #fff; /*делаем белый цвет текста*/
+}
+
+.navbar-contacts {
+  text-align: right;
+  color: #fff;
+  margin-bottom: 4px; /*отступ номера телефона*/
+}
+.navbar-text {
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+}
+.navbar-phone {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #fff;
+}
