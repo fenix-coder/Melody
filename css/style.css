@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "Bebas Neue Regular";
+  src: local("Bebas Neue Regular"), local("Bebas Neue Regular"),
+    url("../fonts/Bebas Neue Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   box-sizing: border-box; /*позволяет правильно считать ширину и длину элементов для всех на странице это правило */
 }
@@ -49,4 +58,63 @@
   line-height: 20px;
   text-decoration: none;
   color: #fff;
+}
+.main {
+  max-width: 1280px;
+  margin: auto;
+  padding-top: 54px;
+  display: flex;
+}
+.main-info {
+  flex-grow: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /*разбрасываем элементы по краям*/
+}
+
+.home-image path {
+  /*прописываем для каждого этажа*/
+  opacity: 0; /*прописываем прозрачность каждого этажа, при нуле все прозрачные*/
+}
+.home-image path:hover {
+  opacity: 1; /*прозрачность меняем на единицу*/
+  cursor: pointer; /*при наведении курсор будет в виде пальца*/
+}
+.counter-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.counter-button {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.counter-arrow-down {
+  transform: rotateX(180deg);
+}
+.main-tytle {
+  margin: 0;
+  font-family: "Bebas Neue Regular", sans-serif;
+  font-weight: normal;
+  font-size: 37px;
+  line-height: 44px;
+  color: #635854;
+}
+.counter {
+  color: #635854;
+  font-weight: normal;
+  font-size: 124px;
+  font-family: "Bebas Neue Regular", sans-serif;
+  margin-top: 10px;
+}
+.button-primary {
+  background: #3596f5;
+  border-radius: 6px;
+  color: #fff;
+  border: none;
+  padding: 16px 36px;
+  cursor: pointer;
 }
