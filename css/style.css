@@ -1,7 +1,9 @@
 @font-face {
-  font-family: "Bebas Neue Regular";
-  src: local("Bebas Neue Regular"), local("Bebas Neue Regular"),
-    url("../fonts/Bebas Neue Regular.ttf") format("ttf");
+  font-family: "Bebas Neue Cyrillic";
+  src: local("Bebas Neue Cyrillic"), local("Bebas Neue Cyrillic"),
+    url("../fonts/BebasNeueRegular.woff2") format("woff2"),
+    url("../fonts/BebasNeueRegular.woff") format("woff")
+
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -77,11 +79,17 @@
 .home-image path {
   /*прописываем для каждого этажа*/
   opacity: 0; /*прописываем прозрачность каждого этажа, при нуле все прозрачные*/
+  cursor: pointer; /*при наведении курсор будет в виде пальца*/
 }
 .home-image path:hover {
   opacity: 1; /*прозрачность меняем на единицу*/
-  cursor: pointer; /*при наведении курсор будет в виде пальца*/
 }
+
+path.current-floor {
+  opacity: 1;
+}
+
+
 .counter-group {
   display: flex;
   flex-direction: column;
@@ -97,7 +105,7 @@
 }
 .main-tytle {
   margin: 0;
-  font-family: "Bebas Neue Regular", sans-serif;
+  font-family: "Bebas Neue Cyrillic", sans-serif;
   font-weight: normal;
   font-size: 37px;
   line-height: 44px;
@@ -107,7 +115,7 @@
   color: #635854;
   font-weight: normal;
   font-size: 124px;
-  font-family: "Bebas Neue Regular", sans-serif;
+  font-family: "Bebas Neue Cyrillic", sans-serif;
   margin-top: 10px;
 }
 .button-primary {
